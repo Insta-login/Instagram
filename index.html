@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accessing Instagram</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Access</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <style>
     body {
       background-color: #fafafa;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Roboto', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
       text-align: center;
     }
 
     .logo {
-      width: 80px;
+      width: 100px;
       margin-bottom: 20px;
-    }
-
-    .loading {
-      font-size: 18px;
-      color: #555;
-      margin-top: 20px;
     }
 
     .spinner {
@@ -33,6 +29,7 @@
       border-radius: 50%;
       width: 40px;
       height: 40px;
+      margin: 20px auto;
       animation: spin 1s linear infinite;
     }
 
@@ -41,18 +38,46 @@
       100% { transform: rotate(360deg); }
     }
 
+    .loading-text {
+      font-size: 16px;
+      color: #555;
+      margin: 20px 0;
+    }
+
     .note {
+      font-size: 14px;
+      color: #808080;
+      margin-bottom: 20px;
+    }
+
+    .action-button {
+      background-color: #3897f0;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .action-button:hover {
+      background-color: #287dc2;
+    }
+
+    footer {
       margin-top: 40px;
       font-size: 12px;
-      color: gray;
+      color: #bbb;
     }
   </style>
 </head>
 <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
   <div class="spinner"></div>
-  <div class="loading">Accessing your Instagram account…</div>
-  <p class="note"> Your instagram account password is compromised. Kindly Deactivate your Account as soon as possible</p>
-  
+  <div class="loading-text">Accessing your Instagram account...</div>
+  <p class="note">Your Instagram account password is compromised. Kindly deactivate your account as soon as possible.</p>
+  <a href="https://help.instagram.com/370452623149242" target="_blank" class="action-button">Deactivate/Delete Account</a>
+  <footer>&copy; 2025 Instagram</footer>
 </body>
 </html>
